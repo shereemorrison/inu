@@ -1,17 +1,53 @@
 :root {
-  /* Palette — cyber / void (expanded in later stages) */
+  /* —— Palette —— */
   --color-bg: #030308;
-  --color-surface: #0a0a12;
+  --color-bg-elevated: #08080f;
+  --color-surface: #0c0c14;
+  --color-border: rgba(232, 230, 240, 0.08);
+  --color-border-strong: rgba(232, 230, 240, 0.16);
+
   --color-text: #e8e6f0;
-  --color-muted: #6b6880;
+  --color-text-secondary: #a8a4b8;
+  --color-muted: #5c586e;
+
   --color-accent: #00f0ff;
-  --color-accent-dim: #00f0ff33;
-  --color-glow: #7b5cff;
+  --color-accent-secondary: #7b5cff;
+  --color-accent-dim: rgba(0, 240, 255, 0.12);
+  --color-glow: rgba(123, 92, 255, 0.45);
 
-  /* Typography */
-  --font-display: system-ui, sans-serif;
-  --font-body: system-ui, sans-serif;
+  /* —— Typography —— */
+  --font-display: 'Syne', system-ui, sans-serif;
+  --font-body: 'Syne', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
 
-  /* Motion */
+  --text-display-1: clamp(3.5rem, 12vw, 9rem);
+  --text-display-2: clamp(2rem, 6vw, 4.5rem);
+  --text-heading: clamp(1.5rem, 3vw, 2.25rem);
+  --text-body: clamp(1rem, 1.5vw, 1.125rem);
+  --text-label: 0.6875rem;
+
+  --leading-tight: 0.92;
+  --leading-snug: 1.1;
+  --leading-body: 1.65;
+
+  --tracking-tight: -0.04em;
+  --tracking-label: 0.28em;
+
+  /* —— Spacing —— */
+  --space-gutter: clamp(1.25rem, 4vw, 3rem);
+  --space-section: clamp(6rem, 18vh, 12rem);
+  --header-height: 4.5rem;
+
+  /* —— Motion —— */
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 200ms;
+  --duration-base: 400ms;
+
+  /* —— Effects —— */
+  --grain-opacity: 0.04;
+  --vignette: radial-gradient(
+    ellipse 80% 60% at 50% 0%,
+    transparent 0%,
+    var(--color-bg) 100%
+  );
 }
