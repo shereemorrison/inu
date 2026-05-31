@@ -1,0 +1,17 @@
+:root {
+  /* Palette — cyber / void (expanded in later stages) */
+  --color-bg: #030308;
+  --color-surface: #0a0a12;
+  --color-text: #e8e6f0;
+  --color-muted: #6b6880;
+  --color-accent: #00f0ff;
+  --color-accent-dim: #00f0ff33;
+  --color-glow: #7b5cff;
+
+  /* Typography */
+  --font-display: system-ui, sans-serif;
+  --font-body: system-ui, sans-serif;
+
+  /* Motion */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
