@@ -1,0 +1,130 @@
+/* Shared hero frame — matches Header max-width + gutters */
+.hero-shell {
+  position: relative;
+  padding-inline: var(--space-gutter);
+  height: var(--hero-height);
+  min-height: 0;
+}
+
+.hero-stage {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  will-change: opacity;
+}
+
+.preloader {
+  transform: translate3d(0, 0, 0);
+}
+
+.hero-overlay {
+  pointer-events: none;
+  height: 100%;
+  min-height: 0;
+}
+
+.hero-copy-layout {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.75rem;
+  pointer-events: none;
+}
+
+.hero-copy-layout > * {
+  pointer-events: auto;
+}
+
+@media (min-width: 768px) {
+  .hero-copy-layout {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    gap: 0 1.5rem;
+  }
+
+  .hero-headline {
+    grid-column: 1 / span 7;
+    align-self: center;
+  }
+
+  .hero-aside {
+    grid-column: 8 / -1;
+    align-self: center;
+    justify-self: end;
+  }
+}
+
+/* Bottom anchor headline */
+.hero-mega-title {
+  font-family: var(--font-display);
+  font-size: var(--text-display-hero);
+  line-height: 0.9;
+  letter-spacing: var(--tracking-tight);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.hero-mega-title .hero-line {
+  display: block;
+}
+
+.hero-mega-title .hero-line-accent {
+  color: var(--color-accent);
+}
+
+/* Right column — vertically centered in hero */
+.hero-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  max-width: 17.5rem;
+}
+
+@media (min-width: 768px) {
+  .hero-aside {
+    text-align: right;
+  }
+}
+
+.hero-sub {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+  text-wrap: balance;
+}
+
+@media (min-width: 768px) {
+  .hero-sub {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+}
+
+.hero-cta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .hero-cta {
+    justify-content: flex-end;
+  }
+}
+
+.hero-cta-line {
+  flex: 0 0 auto;
+  width: 2.75rem;
+  height: 1px;
+  background: var(--color-accent);
+}
+
+@media (min-width: 768px) {
+  .hero-cta-line {
+    width: 3.25rem;
+  }
+}

@@ -36,13 +36,6 @@
     text-transform: uppercase;
   }
 
-  .text-display-1 {
-    font-size: var(--text-display-1);
-    line-height: var(--leading-tight);
-    letter-spacing: var(--tracking-tight);
-    font-weight: 700;
-  }
-
   .text-display-2 {
     font-size: var(--text-display-2);
     line-height: var(--leading-snug);
