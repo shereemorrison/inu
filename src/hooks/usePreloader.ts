@@ -13,7 +13,7 @@ export function usePreloader(options: UsePreloaderOptions = {}) {
   useEffect(() => {
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     const minDuration = reducedMotion ? 400 : (options.minDuration ?? 2400)
-    const exitDuration = reducedMotion ? 150 : 900
+    const exitDuration = reducedMotion ? 150 : 1200
     const holdAt100 = reducedMotion ? 50 : 400
 
     let cancelled = false
