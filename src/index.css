@@ -24,6 +24,24 @@
     scroll-behavior: auto;
   }
 
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  html.is-loading,
+  html.is-loading body {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
   body {
     margin: 0;
     min-height: 100svh;

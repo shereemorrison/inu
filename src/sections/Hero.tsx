@@ -17,14 +17,6 @@ export function Hero() {
           We craft ambitious digital experiences for dogs and the humans who obsess over them —
           with no technical limits.
         </p>
-
-        <div className="mt-16 flex items-center gap-6">
-          <span className="font-mono-label text-[var(--color-muted)]">0%</span>
-          <div className="h-px flex-1 max-w-xs bg-[var(--color-border)]">
-            <div className="h-full w-0 bg-gradient-to-r from-[var(--color-accent)] to-[var(--color-accent-secondary)]" />
-          </div>
-          <span className="font-mono-label text-[var(--color-muted)]">Loading experience</span>
-        </div>
       </div>
 
       <div className="gutter-x mx-auto mt-auto flex w-full max-w-[90rem] justify-center pt-16">
