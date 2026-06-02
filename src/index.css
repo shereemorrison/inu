@@ -3,6 +3,7 @@
 @import './styles/tokens.css';
 @import './styles/global.css';
 @import './styles/hero.css';
+@import './styles/story.css';
 
 @layer base {
   *,
