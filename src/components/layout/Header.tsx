@@ -2,6 +2,8 @@ import { Logo } from '../ui/Logo'
 
 const navLinks = [
   { label: 'About', href: '#about' },
+  { label: 'Nutrition', href: '#nutrition' },
+  { label: 'Experience', href: '#experience' },
   { label: 'Contact', href: '#contact' },
 ] as const
 
@@ -11,7 +13,7 @@ export function Header() {
       <div className="gutter-x mx-auto flex h-full max-w-[90rem] items-center justify-between">
         <Logo />
 
-        <nav className="flex items-center gap-8 md:gap-12" aria-label="Primary">
+        <nav className="flex items-center gap-4 sm:gap-8 md:gap-10" aria-label="Primary">
           {navLinks.map(({ label, href }) => (
             <a
               key={href}
